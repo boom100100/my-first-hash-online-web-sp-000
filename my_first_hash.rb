@@ -45,5 +45,6 @@ def adding
 
 
   # return the shipping_manifest hash below
-  return shipping_manifest.sort
+  return shipping_manifest.sort {|a, b|
+  a <=> b}
 end
